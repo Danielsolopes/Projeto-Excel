@@ -3,6 +3,17 @@
 Analisador interativo de bases de vendas em Excel/CSV, construído em HTML puro
 e processado 100% no navegador (sem backend).
 
+🚀 Uso
+Abra index.html no navegador
+
+Clique em Carregar ou arraste um .xlsx / .xls / .csv
+
+Navegue pelas abas: Geral · Vendedores · Marcas · Alertas · Vendas
+
+Exporte em Excel (5 abas) ou PDF (com gráficos em imagem)
+
+Os dados ficam salvos em localStorage — não precisa reenviar ao recarregar.
+
 O usuário faz upload da planilha e o dashboard gera automaticamente:
 
 • KPIs executivos (Vendas, Projeção, Top Produto, Crescimento)
