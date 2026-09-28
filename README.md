@@ -8,15 +8,25 @@ Um dashboard HTML puro que processa 100% no cliente (navegador). Basta abrir ind
 
 ✨ Recursos
 📊 KPIs executivos	Faturamento, nº de vendas, ticket médio, itens, comissões, descontos e pendências
+
 📈 Projeção inteligente	Regressão linear sobre os últimos 12 meses para estimar o próximo
+
 🏆 Ranking com medalhas	Vendedores, marcas, produtos e UFs — com % de participação
+
 🔍 Filtros avançados	Busca textual + datas + 5 dropdowns customizados (UF, canal, marca, vendedor, pagamento)
+
 🔔 Alertas automáticos	Quedas >20%, produtos sumindo, concentração de UF/canal, pendências e descontos altos
+
 🎯 Metas por vendedor	Progresso visual com cores por desempenho
+
 🔥 Heatmap UF × Mês	Matriz de calor para identificar sazonalidade
+
 📅 Comparador de períodos	Dois intervalos de datas lado a lado
+
 🌗 Modo escuro	Toggle persistente
+
 📱 Responsivo	Desktop, tablet e celular
+
 🛠 Stack
 Tecnologia	Papel
 HTML + CSS + JS puro	Sem framework, sem build
