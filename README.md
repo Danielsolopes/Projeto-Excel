@@ -48,5 +48,5 @@ bash
 5. Exporte em Excel ou PDF
 Hospedagem gratuita: qualquer serviço estático (Netlify, Vercel, GitHub Pages).
 
-🔗 Ver ao vivo → analisedebases.netlify.app
+🔗 Ver ao vivo → https://analisedebases.netlify.app
 
