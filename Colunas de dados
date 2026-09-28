@@ -1,0 +1,17 @@
+ Colunas esperadas
+O sistema normaliza nomes automaticamente (ignora acentos, maiúsculas e espaços). Portanto Valor Venda, valor_venda e VALORVENDA são equivalentes.
+
+Coluna	Uso
+Data	Série temporal
+Cliente, Cidade	Busca
+UF, Marca, Canal de Venda, Vendedor, Pagamento	Agrupamentos
+Produto	Agrupamento + ranking
+Qtde.	Soma
+Valor Bruto, Valor Desconto	Cálculo de desconto
+Valor Venda	Métrica principal
+Comissão	KPI
+Data Pagamento	Status aberto/fechado (vazio = aberto)
+Datas aceitas: serial Excel, Date, dd/mm/yyyy, ISO yyyy-mm-dd
+Números aceitos: puro, ou com R$, pontos e vírgulas
+
+-----------------------------------
