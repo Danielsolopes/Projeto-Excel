@@ -1,0 +1,64 @@
+📐 Metodologia e Fórmulas
+KPIs principais
+Indicador	Fórmula
+Faturamento	Σ Valor Venda
+Nº de vendas	count(linhas)
+Itens vendidos	Σ Qtde.
+Ticket médio	Σ Valor Venda / count(linhas)
+Desconto concedido	Σ Valor Desconto
+% Desconto	Σ Desconto / Σ Valor Bruto × 100
+Comissão total	Σ Comissão
+% Comissão	Σ Comissão / Σ Valor Venda × 100
+Em aberto	Σ Valor Venda onde Data Pagamento está vazia
+Comparativo mês a mês
+text
+Δ% = (ValorMêsAtual − ValorMêsAnterior) / ValorMêsAnterior × 100
+▲ se Δ > +0,5% · ▼ se Δ < −0,5% · → caso contrário
+
+Projeção do próximo mês
+Regressão linear simples sobre os últimos 12 meses:
+
+text
+x = índice sequencial (ano × 12 + mês)
+y = faturamento do mês
+b = Σ(xᵢ−x̄)(yᵢ−ȳ) / Σ(xᵢ−x̄)²        (inclinação)
+a = ȳ − b·x̄                              (intercepto)
+ŷₙ₊₁ = a + b·(xₙ + 1)
+Participação
+text
+% = ValorItem / FaturamentoTotal × 100
+Comparador de 2 períodos
+text
+Δ% = (Período2 − Período1) / Período1 × 100
+Aplicado a: Faturamento, Nº de vendas, Itens, Ticket médio.
+
+🔔 Alertas automáticos
+Alerta	Gatilho
+🔻 Queda de faturamento	Variação mês a mês < −20%
+🚀 Crescimento forte	Variação mês a mês > +20%
+👻 Produto sumindo	Vendeu no mês anterior, não vendeu no atual (valor > R$ 500)
+⚠️ Vendedor sumido	Faturou no mês anterior, zerou no atual
+📉 Vendedor em queda	Variação individual < −30%
+🌍 Dependência de UF	Uma UF > 50% do faturamento
+🎯 Dependência de canal	Um canal > 60% do faturamento
+💳 Pendências	Existem vendas sem Data Pagamento
+🏷️ Desconto alto	Desconto médio > 10% do valor bruto
+🎯 Metas por vendedor
+Meta global: salva em localStorage (vbi-metas)
+
+Meta individual: sobrescreve a global
+
+Progresso: Faturamento / Meta × 100
+
+Cor da barra: 🔴 < 70% · 🟡 70–99% · 🟢 ≥ 100%
+
+Definir via botão "Definir meta" no card do vendedor (quando não há meta cadastrada).
+
+🔥 Heatmap UF × Mês
+Linhas: 12 UFs com maior faturamento
+
+Colunas: todos os meses com venda
+
+Cor: escala dourado → âmbar → vermelho, proporcional ao valor / valor máximo
+
+Célula vazia: —
