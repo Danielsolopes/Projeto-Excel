@@ -1,35 +1,52 @@
-📊 Dashboard em  Html + Inserção de Base
+ Dashboard de Análise de Bases de Vendas
+Analisador interativo de planilhas (Excel/CSV) que transforma dados brutos em insights executivos — sem backend, sem instalação, direto no navegador.
 
-Analisador interativo de bases de vendas em Excel/CSV, construído em HTML puro
-e processado 100% no navegador (sem backend).
+🚀 O que é
+Um dashboard HTML puro que processa 100% no cliente (navegador). Basta abrir index.html e arrastar sua planilha — em segundos você tem KPIs, gráficos, rankings, projeções e alertas prontos para decisão.
 
-🚀 Uso
-Abra index.html no navegador
+🔗 Ver ao vivo → analisedebases.netlify.app
 
-Clique em Carregar ou arraste um .xlsx / .xls / .csv
+✨ Recursos
+📊 KPIs executivos	Faturamento, nº de vendas, ticket médio, itens, comissões, descontos e pendências
+📈 Projeção inteligente	Regressão linear sobre os últimos 12 meses para estimar o próximo
+🏆 Ranking com medalhas	Vendedores, marcas, produtos e UFs — com % de participação
+🔍 Filtros avançados	Busca textual + datas + 5 dropdowns customizados (UF, canal, marca, vendedor, pagamento)
+🔔 Alertas automáticos	Quedas >20%, produtos sumindo, concentração de UF/canal, pendências e descontos altos
+🎯 Metas por vendedor	Progresso visual com cores por desempenho
+🔥 Heatmap UF × Mês	Matriz de calor para identificar sazonalidade
+📅 Comparador de períodos	Dois intervalos de datas lado a lado
+🌗 Modo escuro	Toggle persistente
+📱 Responsivo	Desktop, tablet e celular
+🛠 Stack
+Tecnologia	Papel
+HTML + CSS + JS puro	Sem framework, sem build
+Tailwind CSS (CDN)	Estilização
+Chart.js (CDN)	Gráficos interativos
+SheetJS/XLSX (CDN)	Leitura/escrita de Excel
+jsPDF (CDN)	Geração de PDF com gráficos em imagem
+localStorage	Cache de dados, tema e metas
+📤 Exportações
+Excel — 5 abas prontas: Resumo, Vendas, Vendedores, Marcas, Produtos
 
-Navegue pelas abas: Geral · Vendedores · Marcas · Alertas · Vendas
+PDF — relatório executivo com KPIs, gráficos em imagem e observações automáticas
 
-Exporte em Excel (5 abas) ou PDF (com gráficos em imagem)
+🎯 Impacto
+Transforma planilhas brutas em insights executivos em segundos.
 
-Os dados ficam salvos em localStorage — não precisa reenviar ao recarregar.
+Zero setup — abre e usa
 
-O usuário faz upload da planilha e o dashboard gera automaticamente:
+Zero backend — os dados nunca saem do seu navegador
 
-• KPIs executivos (Vendas, Projeção, Top Produto, Crescimento)
+Zero fricção — funciona offline após o primeiro carregamento
 
-• Gráficos interativos com Chart.js
+🚀 Como usar
+bash
+1. Baixe o index.html
+2. Abra no navegador (duplo clique)
+3. Arraste sua planilha .xlsx / .xls / .csv
+4. Navegue entre as abas: Geral · Vendedores · Marcas · Alertas · Vendas
+5. Exporte em Excel ou PDF
+Hospedagem gratuita: qualquer serviço estático (Netlify, Vercel, GitHub Pages).
 
-• Ranking de vendedores com medalhas
+🔗 Ver ao vivo → analisedebases.netlify.app
 
-• Projeção inteligente do mês
-
-• Filtros avançados com busca e dropdown customizado
-
-• Exportação para Excel/PDF
-
-• Modo escuro e layout responsivo
-
-🎯 Impacto: transforma planilhas brutas em insights executivos em segundos.
-
-🔗 Ver ao vivo: https://analisedebases.netlify.app/
